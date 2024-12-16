@@ -1,0 +1,34 @@
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.deps.json
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.runtimeconfig.json
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.dll
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.pdb
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Domain.pdb
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.csproj.AssemblyReference.cache
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.AssemblyInfoInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.AssemblyInfo.cs
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/Microser.85DCC7E1.Up2Date
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.dll
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/refint/MicroservicioProductos.Infrastructure.dll
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.pdb
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.genruntimeconfig.cache
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/ref/MicroservicioProductos.Infrastructure.dll
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.deps.json
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.runtimeconfig.json
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.dll
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Infrastructure.pdb
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/bin/Debug/net8.0/MicroservicioProductos.Domain.pdb
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.csproj.AssemblyReference.cache
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.AssemblyInfoInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.AssemblyInfo.cs
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/Microser.85DCC7E1.Up2Date
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.dll
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/refint/MicroservicioProductos.Infrastructure.dll
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.pdb
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/MicroservicioProductos.Infrastructure.genruntimeconfig.cache
+/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/Debug/net8.0/ref/MicroservicioProductos.Infrastructure.dll

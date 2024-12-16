@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "SofiGue555678."
+    ports:
+      - "1433:1433"
+
+  microservicio-clientes:
+    build:
+      context: .
+      dockerfile: ./MicroservicioClientes.API/Dockerfile
+    container_name: microservicio-clientes
+    ports:
+      - "5002:80"  # Cambiar a otro puerto local
+    depends_on:
+      - sqlserver
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=ClientesDB;User Id=sa;Password=SofiGue555678.;TrustServerCertificate=True;"
+  

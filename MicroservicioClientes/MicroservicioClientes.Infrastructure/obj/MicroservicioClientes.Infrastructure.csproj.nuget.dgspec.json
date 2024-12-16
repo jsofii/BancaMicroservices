@@ -1,0 +1,224 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj",
+        "projectName": "MicroservicioClientes.Application",
+        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj",
+        "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
+        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/DC-Law-TX/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
+                "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
+        "projectName": "MicroservicioClientes.Domain",
+        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
+        "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
+        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/DC-Law-TX/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
+        "projectName": "MicroservicioClientes.Infrastructure",
+        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
+        "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
+        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/DC-Law-TX/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
+                "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

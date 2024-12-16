@@ -1,0 +1,23 @@
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/bin/Debug/net8.0/MicroservicioClientes.Domain.deps.json
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/bin/Debug/net8.0/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/bin/Debug/net8.0/MicroservicioClientes.Domain.pdb
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.AssemblyInfoInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.AssemblyInfo.cs
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.csproj.CoreCompileInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/refint/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.pdb
+/Users/sofiaguerrero/Documents/BackBanco/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/ref/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/bin/Debug/net8.0/MicroservicioClientes.Domain.deps.json
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/bin/Debug/net8.0/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/bin/Debug/net8.0/MicroservicioClientes.Domain.pdb
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.AssemblyInfoInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.AssemblyInfo.cs
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.csproj.CoreCompileInputs.cache
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/refint/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.pdb
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/ref/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/Debug/net8.0/MicroservicioClientes.Domain.csproj.AssemblyReference.cache

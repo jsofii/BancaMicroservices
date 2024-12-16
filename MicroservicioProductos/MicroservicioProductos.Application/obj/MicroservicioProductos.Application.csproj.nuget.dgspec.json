@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj",
+        "projectName": "MicroservicioProductos.Application",
+        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj",
+        "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
+        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Application/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/DC-Law-TX/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj": {
+                "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj",
+        "projectName": "MicroservicioProductos.Domain",
+        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj",
+        "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
+        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/DC-Law-TX/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver_productos
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "SofiGue555678."
+    ports:
+      - "1434:1433"
+
+  microservicio-clientes:
+    build:
+      context: .
+      dockerfile: ./MicroservicioProductos.API/Dockerfile
+    container_name: microservicio-productos
+    ports:
+      - "5006:80"  # Cambiar a otro puerto local
+    depends_on:
+      - sqlserver
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=sqlserver_productos,1434;Database=ProductosDB;User Id=sa;Password=SofiGue555678.;TrustServerCertificate=True;"
+  
