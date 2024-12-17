@@ -23,14 +23,19 @@ public static class MovimientoEndpoints
 
             group.MapPost("/", async (Cliente cliente, IClienteService clienteService) =>
             {
+                
+                if (string.IsNullOrEmpty(cliente.Genero))
+                {
+                    return Results.BadRequest("Genero is required.");
+                }
+
                 var created = await clienteService.CreateAsync(cliente);
                 return Results.Created($"/api/clientes/{created.ClienteId}", created);
             });
 
-            group.MapPut("/{id}", async (string id, Cliente cliente, IClienteService clienteService) =>
+            group.MapPut("/{id:int}", async (int id, Cliente cliente, IClienteService clienteService) =>
             {
-                if (id != cliente.ClienteId) return Results.BadRequest();
-
+                cliente.Id = id;
                 var updated = await clienteService.UpdateAsync(cliente);
                 return updated is not null ? Results.NoContent() : Results.NotFound();
             });

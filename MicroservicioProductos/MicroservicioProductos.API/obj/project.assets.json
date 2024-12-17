@@ -5214,11 +5214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.API/MicroservicioProductos.API.csproj",
+      "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/MicroservicioProductos.API.csproj",
       "projectName": "MicroservicioProductos.API",
-      "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.API/MicroservicioProductos.API.csproj",
+      "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/MicroservicioProductos.API.csproj",
       "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-      "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.API/obj/",
+      "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/obj/",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
@@ -5235,11 +5235,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj": {
-              "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj"
+            "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj": {
+              "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj"
             },
-            "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj": {
-              "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj"
+            "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj": {
+              "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj"
             }
           }
         }

@@ -4727,11 +4727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj",
+      "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj",
       "projectName": "MicroservicioProductos.Infrastructure",
-      "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj",
+      "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj",
       "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-      "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/",
+      "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
@@ -4748,8 +4748,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj": {
-              "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj"
+            "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj": {
+              "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Domain/MicroservicioProductos.Domain.csproj"
             }
           }
         }

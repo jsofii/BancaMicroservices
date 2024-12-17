@@ -5216,11 +5216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
+      "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
       "projectName": "MicroservicioClientes.API",
-      "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
+      "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
       "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-      "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/obj/",
+      "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/obj/",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
@@ -5237,11 +5237,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
-              "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
+            "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
+              "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
             },
-            "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {
-              "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj"
+            "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {
+              "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj"
             }
           }
         }

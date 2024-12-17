@@ -1,19 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj": {}
+    "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj": {}
   },
   "projects": {
-    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj": {
+    "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
+        "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
         "projectName": "MicroservicioClientes.API",
-        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
+        "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/MicroservicioClientes.API.csproj",
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.API/obj/",
+        "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -28,11 +27,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
-                "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
+              "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
+                "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
               },
-              "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {
-                "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj"
+              "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {
+                "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj"
               }
             }
           }
@@ -98,16 +97,15 @@
         }
       }
     },
-    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
+    "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj",
+        "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj",
         "projectName": "MicroservicioClientes.Application",
-        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj",
+        "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj",
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/obj/",
+        "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -122,8 +120,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
-                "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj"
+              "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
+                "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj"
               }
             }
           }
@@ -168,16 +166,15 @@
         }
       }
     },
-    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
+    "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
+        "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
         "projectName": "MicroservicioClientes.Domain",
-        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
+        "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/",
+        "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -234,16 +231,15 @@
         }
       }
     },
-    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {
+    "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
+        "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
         "projectName": "MicroservicioClientes.Infrastructure",
-        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
+        "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/obj/",
+        "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -258,8 +254,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
-                "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
+              "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
+                "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
               }
             }
           }

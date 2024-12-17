@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i4qlR2KiQmE=",
+  "dgSpecHash": "p8U83cGyBJ4=",
   "success": true,
-  "projectFilePath": "/Users/sofiaguerrero/Documents/BackBanco 2 2/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj",
+  "projectFilePath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Infrastructure/MicroservicioProductos.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/sofiaguerrero/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/sofiaguerrero/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

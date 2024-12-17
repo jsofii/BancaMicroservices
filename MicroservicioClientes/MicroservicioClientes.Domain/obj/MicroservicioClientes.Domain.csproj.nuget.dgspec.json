@@ -1,19 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {}
+    "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {}
   },
   "projects": {
-    "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
+    "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
+        "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
         "projectName": "MicroservicioClientes.Domain",
-        "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
+        "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/MicroservicioClientes.Domain.csproj",
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-        "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Domain/obj/",
+        "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],

@@ -27,14 +27,13 @@ namespace MicroservicioClientes.Application.Services
             await _context.SaveChangesAsync();
             return cliente;
         }
-
         public async Task<Cliente?> UpdateAsync(Cliente cliente)
         {
-            var existingCliente = await _context.Clientes.FindAsync(cliente.ClienteId);
+            var existingCliente = await _context.Clientes.FindAsync(cliente.Id);
             if (existingCliente == null) return null;
 
             existingCliente.Nombre = cliente.Nombre;
-     
+
             await _context.SaveChangesAsync();
             return existingCliente;
         }

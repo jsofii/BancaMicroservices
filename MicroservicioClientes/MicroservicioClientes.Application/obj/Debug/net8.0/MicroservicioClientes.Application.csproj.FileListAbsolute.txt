@@ -28,3 +28,19 @@
 /Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/refint/MicroservicioClientes.Application.dll
 /Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.pdb
 /Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/ref/MicroservicioClientes.Application.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/bin/Debug/net8.0/MicroservicioClientes.Application.deps.json
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/bin/Debug/net8.0/MicroservicioClientes.Application.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/bin/Debug/net8.0/MicroservicioClientes.Application.pdb
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/bin/Debug/net8.0/MicroservicioClientes.Domain.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/bin/Debug/net8.0/MicroservicioClientes.Domain.pdb
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.csproj.AssemblyReference.cache
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.AssemblyInfoInputs.cache
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.AssemblyInfo.cs
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.csproj.CoreCompileInputs.cache
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.sourcelink.json
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/Microser.C926344B.Up2Date
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/refint/MicroservicioClientes.Application.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/MicroservicioClientes.Application.pdb
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/Debug/net8.0/ref/MicroservicioClientes.Application.dll

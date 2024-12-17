@@ -4746,11 +4746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
+      "projectUniqueName": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
       "projectName": "MicroservicioClientes.Infrastructure",
-      "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
+      "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/MicroservicioClientes.Infrastructure.csproj",
       "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
-      "outputPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Infrastructure/obj/",
+      "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
@@ -4767,8 +4767,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
-              "projectPath": "/Users/sofiaguerrero/Documents/BackBanco 2/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
+            "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj": {
+              "projectPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/MicroservicioClientes.Application.csproj"
             }
           }
         }
