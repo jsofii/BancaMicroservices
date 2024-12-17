@@ -1,0 +1,204 @@
+{
+  "info": {
+    "name": "MicroservicioProductos API",
+    "_postman_id": "12345-67890-abcdef",
+    "description": "Colección de Postman para probar los endpoints de MicroservicioProductos API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Cuenta",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"NumeroCuenta\": \"123456\",\n  \"SaldoInicial\": 1000.0\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/cuentas",
+          "host": ["{{baseUrl}}"],
+          "path": ["cuentas"]
+        }
+      }
+    },
+    {
+      "name": "Get Cuentas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/cuentas",
+          "host": ["{{baseUrl}}"],
+          "path": ["cuentas"]
+        }
+      }
+    },
+    {
+      "name": "Get Cuenta By Id",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/cuentas/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["cuentas", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Cuenta",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"NumeroCuenta\": \"123456\",\n  \"SaldoInicial\": 2000.0\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/cuentas/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["cuentas", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Cuenta",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "{{baseUrl}}/cuentas/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["cuentas", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Movimiento",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"CuentaId\": 1,\n  \"Fecha\": \"2023-10-01T00:00:00Z\",\n  \"TipoMovimiento\": \"Deposito\",\n  \"Monto\": 500.0,\n  \"Saldo\": 1500.0\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/movimientos",
+          "host": ["{{baseUrl}}"],
+          "path": ["movimientos"]
+        }
+      }
+    },
+    {
+      "name": "Get Movimientos",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/movimientos",
+          "host": ["{{baseUrl}}"],
+          "path": ["movimientos"]
+        }
+      }
+    },
+    {
+      "name": "Get Movimiento By Id",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/movimientos/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["movimientos", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Movimiento",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"Fecha\": \"2023-10-01T00:00:00Z\",\n  \"Monto\": 600.0\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/movimientos/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["movimientos", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Movimiento Report",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/reportes/movimientos?clienteId=1&fechaInicio=2023-01-01&fechaFin=2023-12-31",
+          "host": ["{{baseUrl}}"],
+          "path": ["reportes", "movimientos"],
+          "query": [
+            {
+              "key": "clienteId",
+              "value": "1"
+            },
+            {
+              "key": "fechaInicio",
+              "value": "2023-01-01"
+            },
+            {
+              "key": "fechaFin",
+              "value": "2023-12-31"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

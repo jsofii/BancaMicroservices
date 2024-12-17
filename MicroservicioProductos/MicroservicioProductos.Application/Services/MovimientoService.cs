@@ -18,7 +18,7 @@ public class MovimientoService : IMovimientoService
 
     public async Task<Movimiento> RegistrarMovimientoAsync(Movimiento movimiento)
     {
-        var cuenta = await _context.Cuentas.FindAsync(movimiento.NumeroCuenta);
+        var cuenta = await _context.Cuentas.FindAsync(movimiento.Cuenta);
         if (cuenta == null)
         {
             throw new KeyNotFoundException("Cuenta no encontrada");

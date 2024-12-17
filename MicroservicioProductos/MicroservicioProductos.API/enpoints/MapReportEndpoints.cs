@@ -4,8 +4,9 @@ public static class ReportEndpoints
 {
     public static void MapReportEndpoints(this IEndpointRouteBuilder endpoints)
     {
+        
         endpoints.MapGet("/reportes/movimientos", async (IReportsService reportService,
-                string clienteId, DateTime fechaInicio, DateTime fechaFin) =>
+                int clienteId, DateTime fechaInicio, DateTime fechaFin) =>
             {
                 try
                 {

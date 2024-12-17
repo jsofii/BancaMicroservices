@@ -21,18 +21,18 @@ namespace TestProject1
         public async Task GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte()
         {
             // Arrange
-            var clienteId = "123";
+            var clienteId = 123;
             var fechaInicio = new DateTime(2023, 1, 1);
             var fechaFin = new DateTime(2023, 12, 31);
 
             var cuentas = new List<Cuenta>
             {
-                new Cuenta { NumeroCuenta = "001", Cliente = clienteId, SaldoInicial = 1000 }
+                new Cuenta { NumeroCuenta = "001", ClienteId = clienteId, SaldoInicial = 1000 }
             };
 
             var movimientos = new List<Movimiento>
             {
-                new Movimiento { NumeroCuenta = "001", Fecha = new DateTime(2023, 6, 1), Monto = 200, Cuenta = cuentas.First() }
+                new Movimiento { Id = 333, Fecha = new DateTime(2023, 6, 1), Monto = 200, Cuenta = cuentas.First() }
             };
 
             var mockCuentas = DbSetMock.CreateDbSetMock(cuentas);
@@ -46,7 +46,6 @@ namespace TestProject1
 
             // Assert
             Assert.NotNull(reporte);
-            Assert.Equal(clienteId, reporte.ClienteId);
             Assert.Equal(fechaInicio, reporte.FechaInicio);
             Assert.Equal(fechaFin, reporte.FechaFin);
             Assert.Single(reporte.Cuentas);

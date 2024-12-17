@@ -15,17 +15,17 @@ public class ReportService: IReportsService
     }
     
     public async Task<EstadoDeCuentaReporte> GenerarEstadoDeCuentaReporteAsync(
-        string clienteId, DateTime fechaInicio, DateTime fechaFin)
+        int clienteId, DateTime fechaInicio, DateTime fechaFin)
     {
 
         // Obtener las cuentas asociadas al cliente
         var cuentas = await _context.Cuentas
-            .Where(c => c.Cliente == clienteId)
+            .Where(c => c.ClienteId == clienteId)
             .ToListAsync();
 
         // Obtener los movimientos de las cuentas dentro del rango de fechas
         var movimientos = await _context.Movimientos
-            .Where(m => m.Cuenta.Cliente == clienteId 
+            .Where(m => m.Cuenta.ClienteId == clienteId 
                         && m.Fecha >= fechaInicio && m.Fecha <= fechaFin)
             .ToListAsync();
 
@@ -39,7 +39,7 @@ public class ReportService: IReportsService
             {
                 CuentaId = c.NumeroCuenta,
                 Saldo = c.SaldoInicial,
-                Movimientos = movimientos.Where(m => m.NumeroCuenta == c.NumeroCuenta).ToList()}).ToList()
+                Movimientos = movimientos.Where(m => m.CuentaId == c.Id).ToList()}).ToList()
         };
 
         return reporte;

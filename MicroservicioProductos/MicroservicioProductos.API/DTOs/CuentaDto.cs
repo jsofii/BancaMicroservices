@@ -8,18 +8,30 @@ public class CuentaDto
     public string NumeroCuenta { get; set; }
 
     [Required]
-    public string Cliente { get; set; }
+    public string TipoCuenta { get; set; }
 
     [Range(0, double.MaxValue)]
     public decimal SaldoInicial { get; set; }
+
+    [Required]
+    public string Estado { get; set; }
+
+    [Required]
+    public int Id { get; set; }
+
+    [Required]
+    public int ClienteId { get; set; }
 
     public Cuenta ToEntity()
     {
         return new Cuenta
         {
             NumeroCuenta = this.NumeroCuenta,
-            Cliente = this.Cliente,
-            SaldoInicial = this.SaldoInicial
+            TipoCuenta = this.TipoCuenta,
+            SaldoInicial = this.SaldoInicial,
+            Estado = this.Estado,
+            Id = this.Id,
+            ClienteId = this.ClienteId
         };
     }
 
@@ -28,8 +40,11 @@ public class CuentaDto
         return new CuentaDto
         {
             NumeroCuenta = cuenta.NumeroCuenta,
-            Cliente = cuenta.Cliente,
-            SaldoInicial = cuenta.SaldoInicial
+            TipoCuenta = cuenta.TipoCuenta,
+            SaldoInicial = cuenta.SaldoInicial,
+            Estado = cuenta.Estado,
+            Id = cuenta.Id,
+            ClienteId = cuenta.ClienteId
         };
     }
 }

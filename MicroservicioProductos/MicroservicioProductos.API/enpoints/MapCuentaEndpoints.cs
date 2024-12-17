@@ -1,11 +1,7 @@
 // CuentaEndpoints.cs
 
-using MicroservicioProductos.Infrastructure.Models;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.EntityFrameworkCore;
 using MicroservicioProductos.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 public static class CuentaEndpoints
 {
@@ -45,7 +41,6 @@ public static class CuentaEndpoints
         var cuenta = await context.Cuentas.FindAsync(id);
         if (cuenta is null) return Results.NotFound();
         cuenta.NumeroCuenta = updatedCuentaDto.NumeroCuenta;
-        cuenta.Cliente = updatedCuentaDto.Cliente;
         cuenta.SaldoInicial = updatedCuentaDto.SaldoInicial;
         await context.SaveChangesAsync();
         return Results.NoContent();

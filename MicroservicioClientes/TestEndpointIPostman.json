@@ -1,0 +1,144 @@
+{
+  "info": {
+    "name": "MicroservicioClientes API",
+    "_postman_id": "12345-67890-abcdef",
+    "description": "Collection to test MicroservicioClientes API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:80/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "80",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Cliente by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:80/api/clientes/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "80",
+          "path": [
+            "api",
+            "clientes",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "replace-with-client-id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Cliente",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Juan Perez\",\n  \"genero\": \"Masculino\",\n  \"edad\": 30,\n  \"identificacion\": \"123456789\",\n  \"direccion\": \"Calle Falsa 123\",\n  \"telefono\": \"555-1234\",\n  \"contrasena\": \"password123\",\n  \"estado\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:80/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "80",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Cliente",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clienteId\": \"replace-with-client-id\",\n  \"nombre\": \"Juan Perez\",\n  \"genero\": \"Masculino\",\n  \"edad\": 30,\n  \"identificacion\": \"123456789\",\n  \"direccion\": \"Calle Falsa 123\",\n  \"telefono\": \"555-1234\",\n  \"contrasena\": \"password123\",\n  \"estado\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:80/api/clientes/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "80",
+          "path": [
+            "api",
+            "clientes",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "replace-with-client-id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Cliente",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:80/api/clientes/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "80",
+          "path": [
+            "api",
+            "clientes",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "replace-with-client-id"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

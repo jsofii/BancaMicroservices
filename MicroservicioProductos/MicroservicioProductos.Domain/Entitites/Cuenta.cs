@@ -1,3 +1,4 @@
+// MicroservicioProductos.Domain/Entities/Cuenta.cs
 using System.ComponentModel.DataAnnotations;
 
 namespace MicroservicioProductos.Infrastructure.Models
@@ -11,16 +12,19 @@ namespace MicroservicioProductos.Infrastructure.Models
 
         [Required]
         [MaxLength(20)]
-        public string Tipo { get; set; } // Tipo de cuenta (Corriente, Ahorros, etc.)
+        public string TipoCuenta { get; set; } // Tipo de cuenta (Corriente, Ahorros, etc.)
 
         [Required]
         public decimal SaldoInicial { get; set; } // Saldo inicial de la cuenta
 
         [Required]
-        public bool Estado { get; set; } // Estado de la cuenta (True: Activa, False: Inactiva)
+        [MaxLength(20)]
+        public string Estado { get; set; } // Estado de la cuenta (Activa, Inactiva)
 
         [Required]
-        [MaxLength(100)]
-        public string Cliente { get; set; } // Nombre del cliente titular
+        public int Id { get; set; } // Identificador de la cuenta
+
+        [Required]
+        public int ClienteId { get; set; } // Identificador del cliente
     }
 }

@@ -1,4 +1,4 @@
-using System;
+// MicroservicioProductos.Infrastructure/Models/Movimiento.cs
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,24 +7,27 @@ namespace MicroservicioProductos.Infrastructure.Models
     public class Movimiento
     {
         [Key]
-        public int Id { get; set; } // Identificador único del movimiento
+        public int Id { get; set; }
 
         [Required]
-        [MaxLength(20)]
-        public string NumeroCuenta { get; set; } // Relacionado con el número de cuenta
+        public DateTime Fecha { get; set; }
 
         [Required]
-        [MaxLength(50)]
-        public string TipoMovimiento { get; set; } // Tipo: "Retiro" o "Depósito"
+        [MaxLength(10)]
+        public string TipoMovimiento { get; set; }
 
         [Required]
-        public decimal Monto { get; set; } // Monto del movimiento
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Monto { get; set; }
 
         [Required]
-        public DateTime Fecha { get; set; } = DateTime.Now; // Fecha del movimiento
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Saldo { get; set; }
 
-        // Relación con Cuenta
-        [ForeignKey("NumeroCuenta")]
-        public Cuenta Cuenta { get; set; } // Propiedad de navegación
+        [Required]
+        public int CuentaId { get; set; } // Foreign key to Cuenta
+
+        [ForeignKey("CuentaId")]
+        public Cuenta Cuenta { get; set; }
     }
 }

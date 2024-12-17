@@ -1,4 +1,4 @@
-using MicroservicioClientes.Domain.Entities;
+// MicroservicioProductos.Infrastructure/Persistence/ApplicationDbContext.cs
 using MicroservicioProductos.Infrastructure.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,12 +19,17 @@ namespace MicroservicioProductos.Infrastructure.Persistence
 
             modelBuilder.Entity<Cuenta>()
                 .ToTable("Cuentas")
-                .HasKey(c => c.NumeroCuenta);
+                .HasKey(c => c.Id);
 
             modelBuilder.Entity<Cuenta>()
-                .Property(c => c.Cliente)
+                .Property(c => c.NumeroCuenta)
                 .IsRequired()
-                .HasMaxLength(100);
+                .HasMaxLength(20);
+
+            modelBuilder.Entity<Cuenta>()
+                .Property(c => c.TipoCuenta)
+                .IsRequired()
+                .HasMaxLength(20);
 
             modelBuilder.Entity<Cuenta>()
                 .Property(c => c.SaldoInicial)
@@ -32,16 +37,13 @@ namespace MicroservicioProductos.Infrastructure.Persistence
                 .HasColumnType("decimal(18,2)");
 
             modelBuilder.Entity<Cuenta>()
-                .Property(c => c.Cliente)
-                .IsRequired();
-
-            modelBuilder.Entity<Movimiento>()
-                .HasKey(m => m.Id);
-
-            modelBuilder.Entity<Movimiento>()
-                .Property(m => m.Monto)
+                .Property(c => c.Estado)
                 .IsRequired()
-                .HasColumnType("decimal(18,2)");
+                .HasMaxLength(20);
+
+            modelBuilder.Entity<Movimiento>()
+                .ToTable("Movimientos")
+                .HasKey(m => m.Id);
 
             modelBuilder.Entity<Movimiento>()
                 .Property(m => m.Fecha)
@@ -53,11 +55,14 @@ namespace MicroservicioProductos.Infrastructure.Persistence
                 .HasMaxLength(10);
 
             modelBuilder.Entity<Movimiento>()
-                .Property(m => m.NumeroCuenta)
+                .Property(m => m.Monto)
                 .IsRequired()
-                .HasMaxLength(20);
+                .HasColumnType("decimal(18,2)");
 
-
+            modelBuilder.Entity<Movimiento>()
+                .Property(m => m.Saldo)
+                .IsRequired()
+                .HasColumnType("decimal(18,2)");
         }
     }
 }
