@@ -1,71 +1,62 @@
-using MicroservicioProductos.Application.Services.Interfaces;
-using MicroservicioProductos.Infrastructure.Models;
+// MovimientoEndpoints.cs
+
 using MicroservicioProductos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
-namespace MicroservicioProductos.API.enpoints;
-
 public static class MovimientoEndpoints
 {
-    public static void MapMovimientoEndpoints(this IEndpointRouteBuilder endpoints)
+public static void MapMovimientoEndpoints(this IEndpointRouteBuilder endpoints)
+{
+    endpoints.MapPost("/movimientos", async (ApplicationDbContext context, MovimientoDto movimientoDto) =>
     {
-        endpoints.MapPost("/movimientos", async (HttpContext context) =>
-            {
-                var serviceProvider = context.RequestServices;
-                var movimientoService = serviceProvider.GetRequiredService<IMovimientoService>();
-                var movimiento = await context.Request.ReadFromJsonAsync<Movimiento>();
+        var movimiento = movimientoDto.ToEntity();
+        context.Movimientos.Add(movimiento);
+        await context.SaveChangesAsync();
+        return Results.Created($"/movimientos/{movimiento.Id}", movimientoDto);
+    })
+    .WithName("CreateMovimiento")
+    .WithOpenApi();
 
-                if (movimiento == null)
-                {
-                    return Results.BadRequest("Invalid movimiento data");
-                }
+    endpoints.MapGet("/movimientos", async (ApplicationDbContext context) =>
+    {
+        var movimientos = await context.Movimientos.ToListAsync();
+        var movimientoDtos = movimientos.Select(MovimientoDto.ToDto).ToList();
+        return Results.Ok(movimientoDtos);
+    })
+    .WithName("GetMovimientos")
+    .WithOpenApi();
 
-                var result = await movimientoService.RegistrarMovimientoAsync(movimiento);
-                return Results.Created($"/movimientos/{result.Id}", result);
-            })
-            .WithName("CreateMovimiento")
-            .WithOpenApi();
+    endpoints.MapGet("/movimientos/{id}", async (ApplicationDbContext context, int id) =>
+    {
+        var movimiento = await context.Movimientos.FindAsync(id);
+        if (movimiento is null) return Results.NotFound();
+        var movimientoDto = MovimientoDto.ToDto(movimiento);
+        return Results.Ok(movimientoDto);
+    })
+    .WithName("GetMovimientoById")
+    .WithOpenApi();
 
-        endpoints.MapGet("/movimientos", async (ApplicationDbContext context) =>
-            {
-                return Results.Ok(await context.Movimientos.ToListAsync());
-            })
-            .WithName("GetMovimientos")
-            .WithOpenApi();
+    endpoints.MapPut("/movimientos/{id}", async (ApplicationDbContext context, int id, MovimientoDto updatedMovimientoDto) =>
+    {
+        var movimiento = await context.Movimientos.FindAsync(id);
+        if (movimiento is null) return Results.NotFound();
+        movimiento.NumeroCuenta = updatedMovimientoDto.NumeroCuenta;
+        movimiento.Fecha = updatedMovimientoDto.Fecha;
+        movimiento.Monto = updatedMovimientoDto.Monto;
+        await context.SaveChangesAsync();
+        return Results.NoContent();
+    })
+    .WithName("UpdateMovimiento")
+    .WithOpenApi();
 
-        endpoints.MapGet("/movimientos/{id}", async (ApplicationDbContext context, int id) =>
-            {
-                var movimiento = await context.Movimientos.FindAsync(id);
-                return movimiento is not null ? Results.Ok(movimiento) : Results.NotFound();
-            })
-            .WithName("GetMovimientoById")
-            .WithOpenApi();
-
-        endpoints.MapPut("/movimientos/{id}", async (ApplicationDbContext context, int id, Movimiento updatedMovimiento) =>
-            {
-                var movimiento = await context.Movimientos.FindAsync(id);
-                if (movimiento is null) return Results.NotFound();
-
-                movimiento.Id = updatedMovimiento.Id;
-                movimiento.Monto = updatedMovimiento.Monto;
-                movimiento.Fecha = updatedMovimiento.Fecha;
-
-                await context.SaveChangesAsync();
-                return Results.NoContent();
-            })
-            .WithName("UpdateMovimiento")
-            .WithOpenApi();
-
-        endpoints.MapDelete("/movimientos/{id}", async (ApplicationDbContext context, int id) =>
-            {
-                var movimiento = await context.Movimientos.FindAsync(id);
-                if (movimiento is null) return Results.NotFound();
-
-                context.Movimientos.Remove(movimiento);
-                await context.SaveChangesAsync();
-                return Results.NoContent();
-            })
-            .WithName("DeleteMovimiento")
-            .WithOpenApi();
-    }
-}
+    endpoints.MapDelete("/movimientos/{id}", async (ApplicationDbContext context, int id) =>
+    {
+        var movimiento = await context.Movimientos.FindAsync(id);
+        if (movimiento is null) return Results.NotFound();
+        context.Movimientos.Remove(movimiento);
+        await context.SaveChangesAsync();
+        return Results.NoContent();
+    })
+    .WithName("DeleteMovimiento")
+    .WithOpenApi();
+}}

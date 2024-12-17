@@ -1,6 +1,5 @@
 // CuentaEndpoints.cs
 
-using MicroservicioClientes.Domain.Entities;
 using MicroservicioProductos.Infrastructure.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -11,54 +10,58 @@ using MicroservicioProductos.Infrastructure.Persistence;
 public static class CuentaEndpoints
 {
     public static void MapCuentaEndpoints(this IEndpointRouteBuilder endpoints)
+{
+    endpoints.MapPost("/cuentas", async (ApplicationDbContext context, CuentaDto cuentaDto) =>
     {
-        endpoints.MapPost("/cuentas", async (ApplicationDbContext context, Cuenta cuenta) =>
-        {
-            context.Cuentas.Add(cuenta);
-            await context.SaveChangesAsync();
-            return Results.Created($"/cuentas/{cuenta.NumeroCuenta}", cuenta);
-        })
-        .WithName("CreateCuenta")
-        .WithOpenApi();
+        var cuenta = cuentaDto.ToEntity();
+        context.Cuentas.Add(cuenta);
+        await context.SaveChangesAsync();
+        return Results.Created($"/cuentas/{cuenta.NumeroCuenta}", cuentaDto);
+    })
+    .WithName("CreateCuenta")
+    .WithOpenApi();
 
-        endpoints.MapGet("/cuentas", async (ApplicationDbContext context) =>
-        {
-            return Results.Ok(await context.Cuentas.ToListAsync());
-        })
-        .WithName("GetCuentas")
-        .WithOpenApi();
+    endpoints.MapGet("/cuentas", async (ApplicationDbContext context) =>
+    {
+        var cuentas = await context.Cuentas.ToListAsync();
+        var cuentaDtos = cuentas.Select(CuentaDto.ToDto).ToList();
+        return Results.Ok(cuentaDtos);
+    })
+    .WithName("GetCuentas")
+    .WithOpenApi();
 
-        endpoints.MapGet("/cuentas/{id}", async (ApplicationDbContext context, int id) =>
-        {
-            var cuenta = await context.Cuentas.FindAsync(id);
-            return cuenta is not null ? Results.Ok(cuenta) : Results.NotFound();
-        })
-        .WithName("GetCuentaById")
-        .WithOpenApi();
+    endpoints.MapGet("/cuentas/{id}", async (ApplicationDbContext context, int id) =>
+    {
+        var cuenta = await context.Cuentas.FindAsync(id);
+        if (cuenta is null) return Results.NotFound();
+        var cuentaDto = CuentaDto.ToDto(cuenta);
+        return Results.Ok(cuentaDto);
+    })
+    .WithName("GetCuentaById")
+    .WithOpenApi();
 
-        endpoints.MapPut("/cuentas/{id}", async (ApplicationDbContext context, int id, Cuenta updatedCuenta) =>
-        {
-            var cuenta = await context.Cuentas.FindAsync(id);
-            if (cuenta is null) return Results.NotFound();
+    endpoints.MapPut("/cuentas/{id}", async (ApplicationDbContext context, int id, CuentaDto updatedCuentaDto) =>
+    {
+        var cuenta = await context.Cuentas.FindAsync(id);
+        if (cuenta is null) return Results.NotFound();
+        cuenta.NumeroCuenta = updatedCuentaDto.NumeroCuenta;
+        cuenta.Cliente = updatedCuentaDto.Cliente;
+        cuenta.SaldoInicial = updatedCuentaDto.SaldoInicial;
+        await context.SaveChangesAsync();
+        return Results.NoContent();
+    })
+    .WithName("UpdateCuenta")
+    .WithOpenApi();
 
-            cuenta.NumeroCuenta = updatedCuenta.NumeroCuenta;
-
-            await context.SaveChangesAsync();
-            return Results.NoContent();
-        })
-        .WithName("UpdateCuenta")
-        .WithOpenApi();
-
-        endpoints.MapDelete("/cuentas/{id}", async (ApplicationDbContext context, int id) =>
-        {
-            var cuenta = await context.Cuentas.FindAsync(id);
-            if (cuenta is null) return Results.NotFound();
-
-            context.Cuentas.Remove(cuenta);
-            await context.SaveChangesAsync();
-            return Results.NoContent();
-        })
-        .WithName("DeleteCuenta")
-        .WithOpenApi();
-    }
+    endpoints.MapDelete("/cuentas/{id}", async (ApplicationDbContext context, int id) =>
+    {
+        var cuenta = await context.Cuentas.FindAsync(id);
+        if (cuenta is null) return Results.NotFound();
+        context.Cuentas.Remove(cuenta);
+        await context.SaveChangesAsync();
+        return Results.NoContent();
+    })
+    .WithName("DeleteCuenta")
+    .WithOpenApi();
+}
 }

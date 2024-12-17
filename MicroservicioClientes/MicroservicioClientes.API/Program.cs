@@ -27,7 +27,7 @@ app.UseHttpsRedirection();
 // Force the app to bind to port 80 (necessary for Docker)
 app.Urls.Add("http://*:80");
 
-app.MapMovimientosEndpoints();
+app.MapClienteEndpoints();
 
 // Run the application
 app.Run();

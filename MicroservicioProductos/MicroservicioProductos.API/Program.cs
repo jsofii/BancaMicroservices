@@ -1,4 +1,3 @@
-using MicroservicioProductos.API.enpoints;
 using MicroservicioProductos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
