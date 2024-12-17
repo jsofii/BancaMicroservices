@@ -1,4 +1,5 @@
 using MicroservicioClientes.Domain.Entities;
+using MicroservicioProductos.Infrastructure.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MicroservicioClientes.Domain

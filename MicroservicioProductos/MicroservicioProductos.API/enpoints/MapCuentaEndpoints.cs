@@ -1,6 +1,7 @@
 // CuentaEndpoints.cs
 
 using MicroservicioClientes.Domain.Entities;
+using MicroservicioProductos.Infrastructure.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
@@ -15,7 +16,7 @@ public static class CuentaEndpoints
         {
             context.Cuentas.Add(cuenta);
             await context.SaveChangesAsync();
-            return Results.Created($"/cuentas/{cuenta.CuentaId}", cuenta);
+            return Results.Created($"/cuentas/{cuenta.NumeroCuenta}", cuenta);
         })
         .WithName("CreateCuenta")
         .WithOpenApi();
@@ -40,8 +41,7 @@ public static class CuentaEndpoints
             var cuenta = await context.Cuentas.FindAsync(id);
             if (cuenta is null) return Results.NotFound();
 
-            cuenta.NumeroDeCuenta = updatedCuenta.NumeroDeCuenta;
-            cuenta.Estado = updatedCuenta.Estado;
+            cuenta.NumeroCuenta = updatedCuenta.NumeroCuenta;
 
             await context.SaveChangesAsync();
             return Results.NoContent();

@@ -137,6 +137,9 @@
         }
       },
       "MicroservicioProductos.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0"
+        },
         "runtime": {
           "MicroservicioProductos.Domain.dll": {}
         }

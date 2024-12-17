@@ -13,6 +13,7 @@
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
         "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.API/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -106,6 +107,7 @@
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
         "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Application/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -175,6 +177,7 @@
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
         "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Domain/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -240,6 +243,7 @@
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
         "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioClientes/MicroservicioClientes.Infrastructure/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],

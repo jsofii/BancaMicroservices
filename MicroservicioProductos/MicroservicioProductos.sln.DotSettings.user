@@ -1,0 +1,26 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1f38a3c4_002D21b4_002D4c9a_002Dbe72_002Dd7e53561bb58/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::48899FFC-CC8E-404D-9EAC-FAA318CF8484::net8.0::TestProject1.ReporteServiceTest.GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=265527b1_002D0e7d_002D4c44_002Dbbcb_002D6072de5ddc68/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::48899FFC-CC8E-404D-9EAC-FAA318CF8484::net8.0::TestProject1.ReporteServiceTest.GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=62430968_002D584e_002D462c_002Dbce9_002De766461457c6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::48899FFC-CC8E-404D-9EAC-FAA318CF8484::net8.0::TestProject1.ReporteServiceTest.GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=631b2e51_002Da399_002D41c6_002D855e_002D5dbdbbd6e6a1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::48899FFC-CC8E-404D-9EAC-FAA318CF8484::net8.0::TestProject1.ReporteServiceTest.GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dac7847e_002Dea2b_002D4c0d_002Da13e_002D5f3f749878c5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::48899FFC-CC8E-404D-9EAC-FAA318CF8484::net8.0::TestProject1.ReporteServiceTest.GenerarEstadoDeCuentaReporteAsync_ShouldReturnReporte&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

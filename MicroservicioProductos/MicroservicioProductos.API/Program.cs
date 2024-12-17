@@ -1,3 +1,4 @@
+using MicroservicioProductos.API.enpoints;
 using MicroservicioProductos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +17,8 @@ var app = builder.Build();
 // Enable Swagger for all environments
 app.UseSwagger();
 app.UseSwaggerUI();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 
 // Enable HTTPS redirection (optional, remove if not required in Docker)
 app.UseHttpsRedirection();
@@ -25,6 +28,7 @@ app.Urls.Add("http://*:80");
 
 app.MapMovimientoEndpoints();
 app.MapCuentaEndpoints();
+app.MapReportEndpoints();
 
 
 

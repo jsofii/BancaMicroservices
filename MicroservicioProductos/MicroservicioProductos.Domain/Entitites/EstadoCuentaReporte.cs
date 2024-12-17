@@ -1,3 +1,5 @@
+using MicroservicioProductos.Infrastructure.Models;
+
 namespace MicroservicioClientes.Domain.Entities;
 
 public class EstadoDeCuentaReporte
@@ -10,7 +12,7 @@ public class EstadoDeCuentaReporte
 
 public class CuentaReporte
 {
-    public int CuentaId { get; set; }
+    public string CuentaId { get; set; }
     public decimal Saldo { get; set; }
     public List<Movimiento> Movimientos { get; set; }
 }

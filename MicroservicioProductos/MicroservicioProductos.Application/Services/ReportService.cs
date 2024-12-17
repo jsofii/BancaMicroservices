@@ -15,31 +15,31 @@ public class ReportService: IReportsService
     }
     
     public async Task<EstadoDeCuentaReporte> GenerarEstadoDeCuentaReporteAsync(
-        int clienteIdString, DateTime fechaInicio, DateTime fechaFin)
+        string clienteId, DateTime fechaInicio, DateTime fechaFin)
     {
 
         // Obtener las cuentas asociadas al cliente
         var cuentas = await _context.Cuentas
-            .Where(c => c.ClienteId == clienteIdString)
+            .Where(c => c.Cliente == clienteId)
             .ToListAsync();
 
         // Obtener los movimientos de las cuentas dentro del rango de fechas
         var movimientos = await _context.Movimientos
-            .Where(m => m.Cuenta.ClienteId == clienteIdString 
+            .Where(m => m.Cuenta.Cliente == clienteId 
                         && m.Fecha >= fechaInicio && m.Fecha <= fechaFin)
             .ToListAsync();
 
         // Crear el reporte
         var reporte = new EstadoDeCuentaReporte
         {
-            ClienteId = clienteIdString.ToString(),
+            ClienteId = clienteId.ToString(),
             FechaInicio = fechaInicio,
             FechaFin = fechaFin,
             Cuentas = cuentas.Select(c => new CuentaReporte
             {
-                CuentaId = c.CuentaId,
+                CuentaId = c.NumeroCuenta,
                 Saldo = c.SaldoInicial,
-                Movimientos = movimientos.Where(m => m.CuentaId == c.CuentaId).ToList()            }).ToList()
+                Movimientos = movimientos.Where(m => m.NumeroCuenta == c.NumeroCuenta).ToList()}).ToList()
         };
 
         return reporte;

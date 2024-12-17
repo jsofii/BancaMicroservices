@@ -2,51 +2,29 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MicroservicioClientes.Domain.Entities
+namespace MicroservicioProductos.Infrastructure.Models
 {
     public class Movimiento
     {
         [Key]
-        public Guid MovimientoId { get; private set; }
+        public int Id { get; set; } // Identificador único del movimiento
 
         [Required]
-        public DateTime Fecha { get; set; }
+        [MaxLength(20)]
+        public string NumeroCuenta { get; set; } // Relacionado con el número de cuenta
 
         [Required]
         [MaxLength(50)]
-        public string TipoMovimiento { get; private set; } // Ejemplo: "Depósito", "Retiro".
+        public string TipoMovimiento { get; set; } // Tipo: "Retiro" o "Depósito"
 
         [Required]
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal Valor { get; set; }
+        public decimal Monto { get; set; } // Monto del movimiento
 
         [Required]
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal Saldo { get; set; }
+        public DateTime Fecha { get; set; } = DateTime.Now; // Fecha del movimiento
 
         // Relación con Cuenta
-        [Required]
-        public int CuentaId { get; set; }
-        public Cuenta Cuenta { get; private set; }
-
-        // Constructor vacío para EF Core
-        private Movimiento() { }
-
-        // Constructor para creación
-        public Movimiento(int cuentaId, string tipoMovimiento, decimal valor, decimal saldo)
-        {
-            MovimientoId = Guid.NewGuid();
-            Fecha = DateTime.UtcNow;
-            TipoMovimiento = tipoMovimiento;
-            Valor = valor;
-            Saldo = saldo;
-            CuentaId = cuentaId;
-        }
-
-        // Método para actualizar saldo
-        public void ActualizarSaldo(decimal nuevoSaldo)
-        {
-            Saldo = nuevoSaldo;
-        }
+        [ForeignKey("NumeroCuenta")]
+        public Cuenta Cuenta { get; set; } // Propiedad de navegación
     }
 }

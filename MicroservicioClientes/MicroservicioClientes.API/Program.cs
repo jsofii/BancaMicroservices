@@ -18,6 +18,8 @@ var app = builder.Build();
 // Enable Swagger for all environments
 app.UseSwagger();
 app.UseSwaggerUI();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 
 // Enable HTTPS redirection (optional, remove if not required in Docker)
 app.UseHttpsRedirection();
