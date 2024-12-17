@@ -1,11 +1,20 @@
+using System.ComponentModel.DataAnnotations;
 using MicroservicioClientes.Domain;
 
 public class ClienteDto
 {
     public int Id { get; set; }
+
+    [Required]
     public string ClienteId { get; set; }
+
+    [Required]
+    [StringLength(100)]
     public string Nombre { get; set; }
+
     public bool Estado { get; set; }
+
+    [Required]
     public string? Genero { get; set; }
 }
 
@@ -18,7 +27,8 @@ public static class ClienteMapper
             Id = cliente.Id,
             ClienteId = cliente.ClienteId,
             Nombre = cliente.Nombre,
-            Estado = cliente.Estado
+            Estado = cliente.Estado,
+            Genero = cliente.Genero
         };
     }
 
@@ -29,7 +39,8 @@ public static class ClienteMapper
             Id = clienteDto.Id,
             ClienteId = clienteDto.ClienteId,
             Nombre = clienteDto.Nombre,
-            Estado = clienteDto.Estado
+            Estado = clienteDto.Estado,
+            Genero = clienteDto.Genero
         };
     }
 }

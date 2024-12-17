@@ -1,7 +1,7 @@
 using MicroservicioClientes.Application.Services;
 using MicroservicioClientes.Domain;
 
-public static class MovimientoEndpoints
+public static class ClienteEndpoints
 {
     public static void MapClienteEndpoints(this IEndpointRouteBuilder endpoints)
     {

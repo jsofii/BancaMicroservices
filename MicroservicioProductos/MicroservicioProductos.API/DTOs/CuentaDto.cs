@@ -1,10 +1,16 @@
 // DTOs/CuentaDto.cs
 using MicroservicioProductos.Infrastructure.Models;
+using System.ComponentModel.DataAnnotations;
 
 public class CuentaDto
 {
+    [Required]
     public string NumeroCuenta { get; set; }
+
+    [Required]
     public string Cliente { get; set; }
+
+    [Range(0, double.MaxValue)]
     public decimal SaldoInicial { get; set; }
 
     public Cuenta ToEntity()
