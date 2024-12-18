@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "toUfVjKlm+4=",
+  "dgSpecHash": "nerD5HJl2LM=",
   "success": true,
   "projectFilePath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Application/MicroservicioProductos.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/sofiaguerrero/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
+    "/Users/sofiaguerrero/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/sofiaguerrero/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "/Users/sofiaguerrero/.nuget/packages/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "/Users/sofiaguerrero/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
     "/Users/sofiaguerrero/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",

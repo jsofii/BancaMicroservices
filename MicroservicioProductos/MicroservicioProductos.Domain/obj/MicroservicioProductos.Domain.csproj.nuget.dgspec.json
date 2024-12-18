@@ -13,6 +13,7 @@
         "packagesPath": "/Users/sofiaguerrero/.nuget/packages/",
         "outputPath": "/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.Domain/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sofiaguerrero/.nuget/NuGet/NuGet.Config"
         ],
@@ -44,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"

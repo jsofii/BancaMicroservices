@@ -1,3 +1,5 @@
+using FluentValidation;
+using FluentValidation.Results;
 using MicroservicioClientes.Application.Services;
 using MicroservicioClientes.Domain;
 
@@ -19,20 +21,27 @@ public static class ClienteEndpoints
             return cliente is not null ? Results.Ok(cliente) : Results.NotFound();
         });
 
-        group.MapPost("/", async (ClienteDto clienteDto, IClienteService clienteService) =>
+        group.MapPost("/", async (ClienteDto clienteDto, IValidator<ClienteDto> validator, IClienteService clienteService) =>
         {
-            if (string.IsNullOrEmpty(clienteDto.Genero))
+            ValidationResult result = await validator.ValidateAsync(clienteDto);
+            if (!result.IsValid)
             {
-                return Results.BadRequest("Genero is required.");
+                return Results.BadRequest(result.Errors);
             }
 
             var created = await clienteService.CreateAsync(clienteDto.ToEntity());
             return Results.Created($"/api/clientes/{created.ClienteId}", created);
         });
 
-        group.MapPut("/{id:int}", async (int id, ClienteDto clienteDto, IClienteService clienteService) =>
+        group.MapPut("/{id:int}", async (int id, ClienteDto clienteDto, IValidator<ClienteDto> validator, IClienteService clienteService) =>
         {
             clienteDto.Id = id;
+            ValidationResult result = await validator.ValidateAsync(clienteDto);
+            if (!result.IsValid)
+            {
+                return Results.BadRequest(result.Errors);
+            }
+
             var updated = await clienteService.UpdateAsync(clienteDto.ToEntity());
             return updated is not null ? Results.NoContent() : Results.NotFound();
         });

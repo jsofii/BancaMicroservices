@@ -172,3 +172,6 @@
 /Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/TestProject1/obj/Debug/net8.0/TestProject1.pdb
 /Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/TestProject1/obj/Debug/net8.0/TestProject1.genruntimeconfig.cache
 /Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/TestProject1/obj/Debug/net8.0/ref/TestProject1.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/TestProject1/bin/Debug/net8.0/FluentValidation.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/TestProject1/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/TestProject1/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

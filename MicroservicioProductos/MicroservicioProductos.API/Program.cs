@@ -1,3 +1,5 @@
+using FluentValidation;
+using MicroservicioProductos.Application.Validators;
 using MicroservicioProductos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddValidatorsFromAssemblyContaining<MovimientoDtoValidator>();
 
 var app = builder.Build();
 

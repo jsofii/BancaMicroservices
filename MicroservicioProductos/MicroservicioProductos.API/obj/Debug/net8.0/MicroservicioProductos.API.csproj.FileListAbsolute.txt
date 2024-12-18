@@ -524,3 +524,6 @@
 /Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/obj/Debug/net8.0/MicroservicioProductos.API.pdb
 /Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/obj/Debug/net8.0/MicroservicioProductos.API.genruntimeconfig.cache
 /Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/obj/Debug/net8.0/ref/MicroservicioProductos.API.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/bin/Debug/net8.0/FluentValidation.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/sofiaguerrero/RiderProjects/BancaMicroservices/MicroservicioProductos/MicroservicioProductos.API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

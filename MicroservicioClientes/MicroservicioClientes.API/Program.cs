@@ -1,3 +1,5 @@
+using FluentValidation;
+using MicroservicioClientes.API.Validators;
 using MicroservicioClientes.Application.Services;
 using MicroservicioClientes.Domain;
 using MicroservicioClientes.Infrastructure.Persistence;
@@ -12,6 +14,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddValidatorsFromAssemblyContaining<ClienteDtoValidator>();
+
 
 var app = builder.Build();
 
